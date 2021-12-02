@@ -1,0 +1,27 @@
+﻿@model GestionProfesores.Win.Models.MVCTeacher
+
+<form method="post" asp-action="Delete">
+        <div class="row">
+            <h2 class="text-primary">Delete teacher</h2>
+            <hr/>
+        </div>
+        <div class="fields">
+            <input asp-for="TeacherId" class="form-control" readonly="readonly"/>
+        </div>
+        <div class="fields">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control"/>
+        </div>
+        <div class="fields">
+            <label asp-for="Surname"></label>
+            <input asp-for="Surname" disabled class="form-control" />
+        </div>
+        <div class="fields">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" disabled class="form-control" />
+        </div>
+        <div/>
+        <br/>
+        <button type="submit" class="btn btn-primary" style="width:150px">Delete</button>
+        <a asp-controller="MVCTeacher" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to list</a>
+</form>

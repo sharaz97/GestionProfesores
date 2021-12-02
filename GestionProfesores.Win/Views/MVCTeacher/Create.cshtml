@@ -1,0 +1,27 @@
+﻿@model GestionProfesores.Win.Models.MVCTeacher
+
+<form method="post">
+        <div class="row">
+            <h2 class="text-primary">Create teacher</h2>
+            <hr/>
+        </div>
+        <div class="fields">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="fields">
+            <label asp-for="Surname"></label>
+            <input asp-for="Surname" class="form-control" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <div class="fields">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control" />
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+        <div/>
+        <br/>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="MVCTeacher" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to list</a>
+</form>
